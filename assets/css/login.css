@@ -1,0 +1,133 @@
+:root {
+  --purple-studywise: #948feb;
+  --blue-studywise: #86a2e1;
+}
+
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("../font/Poppins-Light.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url("../font/Poppins-SemiBold.ttf");
+}
+
+body {
+  font-family: "Poppins-Light";
+  overflow: hidden;
+}
+
+a.logo,
+a.logo:hover {
+  color: white;
+  margin-bottom: 0% !important;
+  font-family: "Poppins-SemiBold";
+}
+
+nav.navbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.6em 0em;
+}
+
+@media screen and (max-width: 1024px) {
+  .hero-head > .container {
+    padding: 0px 1em;
+  }
+}
+
+nav.navbar-content > .navbar-left {
+  align-items: center;
+}
+
+nav.navbar-content > .navbar-right > a {
+  color: white;
+  border: 1px solid white;
+  width: 7em;
+  background-color: transparent;
+}
+
+.navbar-start > .navbar-item,
+.navbar-link {
+  color: white;
+}
+
+section.bg-gradient {
+  background-image: linear-gradient(
+    45deg,
+    var(--purple-studywise),
+    var(--blue-studywise)
+  );
+}
+
+.container > .content {
+  position: relative;
+  margin: auto 1%;
+}
+
+.container > .content > .bg-img {
+  width: 100%;
+  position: absolute;
+  bottom: -41px;
+  right: 162px;
+}
+
+.container > .content > .bg-img > img {
+  width: 50em;
+  max-width: inherit;
+  opacity: 0.6;
+}
+
+.container > .content > form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-color: white;
+  padding: 2.5em;
+  gap: 30px;
+  border-radius: 50px;
+  box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%),
+    0 0 0 1px rgb(10 10 10 / 2%);
+}
+
+.container > .content > form > div.boky {
+  display: flex;
+  justify-content: center;
+}
+
+.container > .content > form > div.boky > img {
+  width: 20%;
+}
+
+form > .form-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+form > .form-content > div > input {
+  padding: 0.9em 5em 0.9em 1em;
+  width: 100%;
+  border-radius: 9px;
+  font-size: 15px;
+  border: 1px solid #8080804a;
+  outline: none;
+}
+
+form > .form-content > div > button,
+form > .form-content > div > button:hover {
+  border-radius: 9px;
+  background-color: var(--purple-studywise);
+  color: white;
+  margin-top: 1em;
+  width: 7em;
+  font-family: "Poppins-SemiBold";
+}
+
+form > .form-content > p {
+  color: var(--purple-studywise);
+}

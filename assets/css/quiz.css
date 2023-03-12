@@ -1,0 +1,174 @@
+:root {
+  --purple-studywise: #948feb;
+  --blue-studywise: #86a2e1;
+}
+
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("../font/Poppins-Light.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url("../font/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url("../font/Poppins-Medium.ttf");
+}
+
+body {
+  font-family: "Poppins-Light";
+  overflow: hidden;
+}
+
+a.logo,
+a.logo:hover {
+  color: white;
+  margin-bottom: 0% !important;
+  font-family: "Poppins-SemiBold";
+}
+
+nav.navbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.6em 0em;
+}
+
+@media screen and (max-width: 1024px) {
+  .hero-head > .container {
+    padding: 0px 1em;
+  }
+}
+
+nav.navbar-content > .navbar-left {
+  align-items: center;
+}
+
+nav.navbar-content > .navbar-right > a {
+  color: white;
+  border: 1px solid white;
+  width: 8em;
+  background-color: transparent;
+}
+
+.navbar-start > .navbar-item,
+.navbar-link {
+  color: white;
+}
+
+section.bg-gradient {
+  background-image: linear-gradient(
+    45deg,
+    var(--purple-studywise),
+    var(--blue-studywise)
+  );
+}
+
+.container > .content {
+  position: relative;
+  margin: auto 1%;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+
+.container > .content > .bg-img {
+  width: 100%;
+  position: absolute;
+}
+
+.container > .content > .bg-img > img {
+  width: 15em;
+  max-width: inherit;
+  opacity: 0.6;
+}
+
+.container > .content > .bg-img:nth-child(1) {
+  bottom: -41px;
+  right: 162px;
+}
+
+.container > .content > .bg-img:nth-child(2) {
+  top: 2em;
+  right: -84%;
+}
+
+.container > .content > form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  background-color: white;
+  padding: 2.5em;
+  gap: 30px;
+  border-radius: 25px;
+  box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%),
+    0 0 0 1px rgb(10 10 10 / 2%);
+  justify-content: center;
+  margin: auto;
+  padding: 2.5em 3em;
+  gap: 2em;
+}
+
+.container > .content > form > div:nth-child(1) {
+  color: var(--purple-studywise);
+  font-family: "Poppins-SemiBold";
+  font-size: 1.3em;
+}
+
+.container > .content > form > .quiz-content {
+  line-height: 2;
+  font-size: 1.1em;
+  font-family: "Poppins-Medium";
+  color: #707070;
+  margin-left: 1em;
+}
+
+.container > .content > form > .quiz-content > div {
+  display: flex;
+  gap: 15px;
+}
+
+.container > .content > .quiz {
+  display: flex;
+  align-items: flex-end;
+  gap: 2em;
+}
+
+.container > .content > .quiz > img {
+  width: 5em;
+}
+
+.container > .content > .quiz > span {
+  color: white;
+  font-size: 3.4em;
+  font-family: "Poppins-Medium";
+}
+
+.container > .content > form > .btns {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  gap: 2em;
+  position: relative;
+}
+
+.container > .content > form > .btns > div > input {
+  color: white;
+  background-color: var(--purple-studywise);
+  font-family: "Poppins-SemiBold";
+  border-radius: 10px;
+  padding: 0.5em 1.5em;
+}
+
+.container > .content > form > .btns > a {
+  border: 2px solid var(--purple-studywise);
+  color: var(--purple-studywise);
+  padding: 0.5em 1.5em;
+  font-family: "Poppins-SemiBold";
+  border-radius: 10px;
+}

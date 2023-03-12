@@ -1,0 +1,35 @@
+.plus-container {
+  position: fixed;
+  bottom: 35px;
+  right: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1.5em;
+}
+
+.plus-container > div:nth-child(1) {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.plus-container > div:nth-child(1) > a {
+  padding: 0.5em 1em;
+  border-radius: 15px;
+  box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%),
+    0 0 0 1px rgb(10 10 10 / 2%);
+  color: var(--purple-studywise);
+  font-family: "Poppins-Medium";
+  background-color: white;
+  width: 100%;
+}
+
+.plus-container > div:nth-child(1).active {
+  display: flex;
+}
+
+.plus-container > a > img.icon-plus {
+  width: 3em;
+}

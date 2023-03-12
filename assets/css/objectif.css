@@ -1,0 +1,168 @@
+:root {
+  --purple-studywise: #948feb;
+  --blue-studywise: #86a2e1;
+}
+
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("../font/Poppins-Light.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url("../font/Poppins-SemiBold.ttf");
+}
+
+body {
+  font-family: "Poppins-Light";
+  overflow: hidden;
+}
+
+a.logo,
+a.logo:hover {
+  color: white;
+  margin-bottom: 0% !important;
+  font-family: "Poppins-SemiBold";
+}
+
+nav.navbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.6em 0em;
+}
+
+@media screen and (max-width: 1024px) {
+  .hero-head > .container {
+    padding: 0px 1em;
+  }
+}
+
+nav.navbar-content > .navbar-left {
+  align-items: center;
+}
+
+nav.navbar-content > .navbar-right > a {
+  color: white;
+  border: 1px solid white;
+  width: 8em;
+  background-color: transparent;
+}
+
+p.accroche {
+  color: white;
+  margin-bottom: 1.3em !important;
+}
+.navbar-start > .navbar-item,
+.navbar-link {
+  color: white;
+}
+
+p.accroche + p {
+  color: white;
+}
+
+section.bg-gradient {
+  background-image: linear-gradient(
+    45deg,
+    var(--purple-studywise),
+    var(--blue-studywise)
+  );
+}
+
+section > div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+
+section > div:nth-child(2) > .content {
+  position: relative;
+  margin: 1% 1% 6%;
+  margin-top: 1em;
+  width: 55%;
+}
+
+section > div:nth-child(2) > .content > .bg-img {
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+}
+
+section > div:nth-child(2) > .content > .bg-img:nth-child(1) {
+  top: 10%;
+  right: 30%;
+}
+
+section > div:nth-child(2) > .content > .bg-img:nth-child(2) {
+  left: 52%;
+}
+
+section > div:nth-child(2) > .content > .bg-img > img {
+  max-width: inherit;
+  opacity: 0.6;
+}
+
+section > div:nth-child(2) > .content > .bg-img:nth-child(1) > img {
+  width: 100%;
+}
+
+section > div:nth-child(2) > .content > .bg-img:nth-child(2) > img {
+  width: 75%;
+}
+
+section > div:nth-child(2) > .content > form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: white;
+  padding: 7% 9%;
+  gap: 30px;
+  border-radius: 50px;
+  box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%),
+    0 0 0 1px rgb(10 10 10 / 2%);
+}
+
+form > .form-content {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+form > .form-content > div:nth-child(1) {
+  display: flex;
+}
+
+form > .form-content > div:nth-child(2) {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  gap: 12px;
+}
+
+form > .form-content > div:nth-child(2) > div > input {
+  padding: 0.9em 5em 0.9em 1em;
+  width: 100%;
+  border-radius: 9px;
+  font-size: 15px;
+  border: 1px solid #8080804a;
+  outline: none;
+}
+
+@media screen and (max-width: 990px) {
+  form > .form-content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+form > .form-content > div:nth-child(2) {
+  align-items: initial;
+  width: 100%;
+}
+
+@media screen and (max-width: 748px) {
+  section > div:nth-child(2) > .content {
+    width: 90%;
+  }
+}

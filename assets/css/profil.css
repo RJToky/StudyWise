@@ -1,0 +1,241 @@
+:root {
+  --purple-studywise: #948feb;
+  --blue-studywise: #86a2e1;
+}
+
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("../font/Poppins-Light.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url("../font/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url("../font/Poppins-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("../font/Poppins-Bold.ttf");
+}
+
+body {
+  font-family: "Poppins-Light";
+}
+
+a.logo,
+a.logo:hover {
+  font-family: "Poppins-SemiBold";
+  color: white;
+  margin-bottom: 0% !important;
+}
+
+.hero-head {
+  box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%),
+    0 0 0 1px rgb(10 10 10 / 2%);
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+nav.navbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 0em;
+}
+
+@media screen and (max-width: 1024px) {
+  .hero-head > .container {
+    padding: 0px 1em;
+  }
+}
+
+nav.navbar-content > .navbar-left {
+  align-items: center;
+}
+
+nav.navbar-content > .navbar-right > a {
+  color: white;
+  border: 1px solid white;
+  width: 7em;
+  background-color: transparent;
+}
+
+.navbar-start > .navbar-item,
+.navbar-link {
+  color: white;
+}
+
+.bg-gradient {
+  background-image: linear-gradient(
+    45deg,
+    var(--purple-studywise),
+    var(--blue-studywise)
+  );
+}
+
+.profil {
+  display: flex;
+  gap: 1em;
+}
+
+.profil > .left {
+  width: 3.5em;
+  height: 3.5em;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profil > .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 6px;
+}
+
+.profil > .right > .name h1 {
+  color: white;
+}
+
+.profil > .right > .pts > span {
+  background-color: white;
+  color: var(--purple-studywise);
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 15px;
+  padding: 2px 10px;
+}
+
+section > main {
+  display: flex;
+  width: 100%;
+  margin-top: calc(88px + 1em);
+}
+
+section > main > nav {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 12em;
+  background-color: var(--purple-studywise);
+  color: white;
+  font-family: "Poppins-Medium";
+  font-size: 1.2em;
+  height: 84.1vh;
+  border-radius: 0px 20px 20px 0px;
+  gap: 2em;
+  padding: 2em 0px;
+}
+
+section > main > nav > .bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
+}
+
+section > main > nav > .bottom > .navlink {
+  display: flex;
+  gap: 1em;
+  color: white;
+}
+
+.top > span > img {
+  width: 3em;
+}
+
+.bottom > .navlink > span > img {
+  width: 1.1em;
+}
+
+section > main > .profil-container {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 12em);
+  padding: 2em 7%;
+  margin-left: 230.39px;
+  position: relative;
+}
+
+/* 794px */
+
+.chart-container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%),
+    0 0 0 1px rgb(10 10 10 / 2%);
+  padding: 3em 4em;
+  width: 85%;
+  margin: auto;
+}
+
+.chart-container > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+
+.chart-container > div > div {
+  margin: 1em auto;
+}
+
+.chart-container > div > div > img {
+  width: 9em;
+}
+
+.profil-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.profil-container > .avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+.profil-container > .avatar > img {
+  width: 7em;
+  height: 7em;
+  border-radius: 50px;
+}
+
+.profil-container > .avatar > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.profil-container > .avatar > div > span:nth-child(1) {
+  font-family: "Poppins-SemiBold";
+  color: rgb(122 122 122);
+  font-size: 2em;
+}
+
+.profil-container > .avatar > div > span:nth-child(2) {
+  font-family: "Poppins-Medium";
+  color: rgb(165 165 165);
+}
+
+.profil-container > .avatar > div > span:nth-child(3) {
+  font-family: "Poppins-Medium";
+  color: rgb(165 165 165);
+}
+
+.profil-container > .avatar > div > span:nth-child(4) {
+  background-color: var(--purple-studywise);
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 1em;
+}

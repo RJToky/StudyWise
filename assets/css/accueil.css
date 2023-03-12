@@ -1,0 +1,371 @@
+:root {
+  --purple-studywise: #948feb;
+  --blue-studywise: #86a2e1;
+}
+
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("../font/Poppins-Light.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url("../font/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url("../font/Poppins-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("../font/Poppins-Bold.ttf");
+}
+
+body {
+  font-family: "Poppins-Light";
+}
+
+a.logo,
+a.logo:hover {
+  font-family: "Poppins-SemiBold";
+  color: white;
+  margin-bottom: 0% !important;
+}
+
+.hero-head {
+  box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%),
+    0 0 0 1px rgb(10 10 10 / 2%);
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+nav.navbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 0em;
+}
+
+@media screen and (max-width: 1024px) {
+  .hero-head > .container {
+    padding: 0px 1em;
+  }
+}
+
+nav.navbar-content > .navbar-left {
+  align-items: center;
+}
+
+nav.navbar-content > .navbar-right > a {
+  color: white;
+  border: 1px solid white;
+  width: 7em;
+  background-color: transparent;
+}
+
+.navbar-start > .navbar-item,
+.navbar-link {
+  color: white;
+}
+
+.bg-gradient {
+  background-image: linear-gradient(
+    45deg,
+    var(--purple-studywise),
+    var(--blue-studywise)
+  );
+}
+
+.profil {
+  display: flex;
+  gap: 1em;
+}
+
+.profil > .left {
+  width: 3.5em;
+  height: 3.5em;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profil > .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 6px;
+}
+
+.profil > .right > .name h1 {
+  color: white;
+}
+
+.profil > .right > .pts > span {
+  background-color: white;
+  color: var(--purple-studywise);
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 15px;
+  padding: 2px 10px;
+}
+
+section > main {
+  display: flex;
+  width: 100%;
+  margin-top: calc(88px + 1em);
+}
+
+section > main > nav {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 12em;
+  background-color: var(--purple-studywise);
+  color: white;
+  font-family: "Poppins-Medium";
+  font-size: 1.2em;
+  height: 84.1vh;
+  border-radius: 0px 20px 20px 0px;
+  gap: 2em;
+  padding: 2em 0px;
+}
+
+section > main > nav > .bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
+}
+
+section > main > nav > .bottom > .navlink {
+  display: flex;
+  gap: 1em;
+  color: white;
+}
+
+.top > span > img {
+  width: 3em;
+}
+
+.bottom > .navlink > span > img {
+  width: 1.1em;
+}
+
+.accueil-container {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 12em);
+  margin-left: 230.39px;
+  padding: 2em 7%;
+}
+
+.accueil-container > .list-todo {
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+}
+
+.accueil-container > .list-todo > .item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid var(--purple-studywise);
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+.accueil-container > .list-todo > .item > img {
+  width: 2em;
+}
+
+.accueil-container > .list-todo > .item > a {
+  font-family: "Poppins-SemiBold";
+  color: var(--purple-studywise);
+}
+
+.accueil-container > .list-todo > .item > .avancement {
+  color: var(--purple-studywise);
+  font-family: "Poppins-SemiBold";
+  box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%),
+    0 0 0 1px rgb(10 10 10 / 2%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3em;
+  height: 3em;
+  border-radius: 50px;
+  font-size: 13px;
+}
+
+.accueil-container > .list-todo > .plus-todo {
+  margin: 1em 0px 2em;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.accueil-container > .list-todo > .plus-todo > a {
+  color: white;
+  background-color: var(--purple-studywise);
+  padding: 0.5em 1.5em;
+  font-family: "Poppins-SemiBold";
+  border-radius: 10px;
+}
+
+.chart-container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%),
+    0 0 0 1px rgb(10 10 10 / 2%);
+  padding: 3em 4em;
+  width: 85%;
+  margin: auto;
+}
+
+.chart-container > div:nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+
+.chart-container > div:nth-child(1) > div {
+  margin: 1em auto;
+}
+
+.chart-container > div:nth-child(1) > div > img {
+  width: 9em;
+}
+
+.chart-container > div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+}
+
+.chart-container > div:nth-child(2) > a {
+  color: var(--blue-studywise);
+  font-family: "Poppins-SemiBold";
+}
+
+.question-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  margin-top: 3em;
+  padding: 2em 0%;
+}
+
+.question-container > div:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.question-container > div:nth-child(1) > img {
+  width: 4em;
+}
+
+.question-container > div:nth-child(1) > span {
+  font-family: "Poppins-SemiBold";
+  color: var(--blue-studywise);
+  font-size: 2.5em;
+}
+
+.question-container > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.question-container > div:nth-child(2) > .item {
+  display: flex;
+  gap: 5vmin;
+  justify-content: space-around;
+  padding: 2.5em 2vmin;
+  box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%),
+    0 0 0 1px rgb(10 10 10 / 2%);
+  border-radius: 35px;
+  flex-wrap: wrap;
+}
+
+.question-container > div:nth-child(2) > .item > .text {
+  width: 60%;
+  font-size: 0.9em;
+}
+
+.question-container > div:nth-child(2) > .plus-question {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1em 0px 2em;
+}
+
+.question-container > div:nth-child(2) > .plus-question > a {
+  color: white;
+  background-color: var(--purple-studywise);
+  padding: 0.5em 1.5em;
+  font-family: "Poppins-SemiBold";
+  border-radius: 10px;
+}
+
+.question-container .profil {
+  display: flex;
+  align-items: center;
+  gap: 1.4em;
+}
+
+.question-container .profil > .avatar {
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.question-container .profil > .name {
+  color: var(--blue-studywise);
+}
+
+.question-container .profil > .name > span:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins-SemiBold";
+}
+
+.plus-container {
+  position: fixed;
+  bottom: 35px;
+  right: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1.5em;
+}
+
+.plus-container > div:nth-child(1) {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.plus-container > div:nth-child(1) > a {
+  padding: 0.5em 1em;
+  border-radius: 15px;
+  box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%),
+    0 0 0 1px rgb(10 10 10 / 2%);
+  color: var(--purple-studywise);
+  font-family: "Poppins-Medium";
+  background-color: white;
+  width: 100%;
+}
+
+.plus-container > div:nth-child(1).active {
+  display: flex;
+}
+
+.plus-container > a > img.icon-plus {
+  width: 3em;
+}
